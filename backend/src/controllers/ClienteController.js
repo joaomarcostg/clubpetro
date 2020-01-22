@@ -4,6 +4,7 @@ const Cliente = require('../models/Cliente.js')
 
 module.exports = {
 
+    //registra um cliente
     async store(req, res) {
 
         try {
@@ -24,6 +25,7 @@ module.exports = {
         }
     },
 
+    //mostra um cliente passado pelo parametro 'idc'
     async index(req, res) {
         try {
             const { idc } = req.params
@@ -40,6 +42,7 @@ module.exports = {
         }
     },
 
+    //lista todos os clientes
     async list(req, res) {
         try{
             const clientes = await Cliente.find()

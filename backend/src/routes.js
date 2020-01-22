@@ -6,6 +6,9 @@ const FrentistaController = require('./controllers/FrentistaController.js')
 
 const routes = express.Router()
 
+
+//fiz rotas auxiliares para registrar clientes e frentistas afim de testar minha api
+
 routes.post('/clientes', ClienteController.store)
 routes.get('/clientes', ClienteController.list)
 routes.get('/clientes/:idc', ClienteController.index)

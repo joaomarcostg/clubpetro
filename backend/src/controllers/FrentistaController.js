@@ -4,8 +4,8 @@ const Frentista = require('../models/Frentista.js')
 
 module.exports = {
 
+    //registra um frentista
     async store(req, res) {
-
         try{
             const { cpf } = req.body
             const frentistaExists = await Frentista.findOne({ cpf: cpf })
@@ -23,6 +23,7 @@ module.exports = {
         }
     },
 
+    //mostra um frentista passado pelo parametro 'idf'
     async index(req, res) {
         try {
             const { idf } = req.params
@@ -39,6 +40,7 @@ module.exports = {
         }
     },
 
+    //lista todos os frentistas
     async list(req, res) {
         try {
             const frentistas = await Frentista.find()
@@ -49,10 +51,10 @@ module.exports = {
         }
     },
 
+    //lista as vendas realizadas por determinado frentista 'idf'
     async vendas(req, res) {
-        const { idf } = req.params
-
         try {
+            const { idf } = req.params
             const frentistaExists = await Frentista.findById(idf)
             if (frentistaExists) {
                 return res.json(frentistaExists.vendas)
@@ -64,6 +66,5 @@ module.exports = {
         catch (err) {
             return res.json(err)
         }
-
     }
 }

@@ -14,6 +14,10 @@ const VendaSchema = new Schema({
         ref: 'Cliente',
         required: true
     },
+    fraudulenta: {
+        type: Boolean,
+        required: true
+    }
 })
 
 module.exports = model('Venda', VendaSchema)
