@@ -7,11 +7,15 @@ const FrentistaController = require('./controllers/FrentistaController.js')
 const routes = express.Router()
 
 routes.post('/clientes', ClienteController.store)
+routes.get('/clientes', ClienteController.list)
+routes.get('/clientes/:idc', ClienteController.index)
 routes.post('/frentistas', FrentistaController.store)
-
-// routes.post('/devs', DevController.store)
-// routes.post('/devs/:devId/likes', LikeController.store)
-// routes.post('/devs/:devId/dislikes', DislikeController.store)
-
+routes.get('/frentistas', FrentistaController.list)
+routes.get('/frentistas/:idf', FrentistaController.index)
+routes.post('/frentistas/:idf/vendas', VendaController.store)
+routes.get('/frentistas/:idf/vendas', FrentistaController.vendas)
+routes.get('/frentistas/:idf/vendas/:idv', VendaController.index)
+routes.get('/vendas', VendaController.list)
+routes.get('/vendas/:idv', VendaController.index)
 
 module.exports = routes

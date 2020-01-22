@@ -7,7 +7,7 @@ const server = express()
 
 mongoose.connect('mongodb+srv://dbUser:clubpetro2020@maincluster-ftnwf.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
 })
 
 server.use(cors())
