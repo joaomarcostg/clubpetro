@@ -15,7 +15,8 @@ const orange_cp = "#f26522"
 
 
 function Sidebar() {
-    const [color, setColor] = useState(grey_cp)
+    // const [color, setColor] = useState(grey_cp)
+    const [id, setId] = useState(null)
 
     return (
         <div className="sidebar-container">
@@ -25,46 +26,88 @@ function Sidebar() {
                 </div>
             </div>
             <div className="menu">
-                <div className="menuitem" id="dashboard" onMouseOver={() => { setColor(orange_cp) }} onMouseLeave={() => setColor(grey_cp)}>
+                <div className="menuitem" id="dashboard" onMouseEnter={(e) => setId(e.target.id)}
+
+                    onMouseOut={() => setId(null)}>
                     <div className="icon">
-                        <DashIcon fill={color} />
+                        {id === 'dashboard' ?
+                            <DashIcon fill={orange_cp} />
+                            :
+                            <DashIcon fill={grey_cp} />
+                        }
                     </div>
                     <div className="text">DASHBOARD</div>
                 </div>
-                <div className="menuitem" id="resgates" onMouseOver={() => { setColor(orange_cp) }} onMouseLeave={() => setColor(grey_cp)}>
+                <div className="menuitem" id="resgates" onMouseEnter={(e) => setId(e.target.id)}
+
+                    onMouseOut={() => setId(null)}>
                     <div className="icon">
-                        <ResgateIcon fill={color} />
+                        {id === 'resgates' ?
+                            <ResgateIcon fill={orange_cp} />
+                            :
+                            <ResgateIcon fill={grey_cp} />
+                        }
                     </div>
                     <div className="text">RESGATES</div>
 
                 </div>
-                <div className="menuitem" id="anti-fraude" onMouseOver={() => { setColor(orange_cp) }} onMouseLeave={() => setColor(grey_cp)}>
+                <div className="menuitem" id="anti-fraude" onMouseEnter={(e) => setId(e.target.id)}
+
+                    onMouseOut={() => setId(null)}>
                     <div className="icon">
-                        <AntiIcon fill={color} />
+                        {id === 'anti-fraude' ?
+                            <AntiIcon fill={orange_cp} />
+                            :
+                            <AntiIcon fill={grey_cp} />
+                        }
                     </div>
                     <div className="text">ANTI FRAUDE</div>
                 </div>
-                <div className="menuitem" id="vendas" onMouseOver={() => { setColor(orange_cp) }} onMouseLeave={() => setColor(grey_cp)}>
+                <div className="menuitem" id="vendas" onMouseEnter={(e) => setId(e.target.id)}
+
+                    onMouseOut={() => setId(null)}>
                     <div className="icon">
-                        <VendasIcon fill={color} />
+                        {id === 'vendas' ?
+                            <VendasIcon fill={orange_cp} />
+                            :
+                            <VendasIcon fill={grey_cp} />
+                        }
                     </div>
                     <div className="text">VENDAS</div>
                 </div>
-                <div className="menuitem" id="relatorios" onMouseOver={() => { setColor(orange_cp) }} onMouseLeave={() => setColor(grey_cp)}>
+                <div className="menuitem" id="relatorios" onMouseEnter={(e) => setId(e.target.id)}
+
+                    onMouseOut={() => setId(null)}>
                     <div className="icon">
-                        <RelatoriosIcon fill={color} />
+                        {id === 'relatorios' ?
+                            <RelatoriosIcon fill={orange_cp} />
+                            :
+                            <RelatoriosIcon fill={grey_cp} />
+                        }
                     </div>
                     <div className="text">RELATÓRIOS</div>
                 </div>
-                <div className="menuitem" id="perfil" onMouseOver={() => { setColor(orange_cp) }} onMouseLeave={() => setColor(grey_cp)} >
+                <div className="menuitem" id="perfil" onMouseEnter={(e) => setId(e.target.id)}
+
+                    onMouseOut={() => setId(null)}>
                     <div className="icon">
-                        <PerfilIcon fill={color} />
+                        {id === 'perfil' ?
+                            <PerfilIcon fill={orange_cp} />
+                            :
+                            <PerfilIcon fill={grey_cp} />
+                        }
                     </div>
                     <div className="text">PERFIL</div>
                 </div>
-                <div className="menuitem" id="campanhas" onMouseOver={() => { setColor(orange_cp) }} onMouseLeave={() => setColor(grey_cp)}>
+                <div className="menuitem" id="campanhas" onMouseEnter={(e) => setId(e.target.id)}
+
+                    onMouseOut={() => setId(null)}>
                     <div className="icon">
-                        <CampanhasIcon fill={color} />
+                        {id === 'campanhas' ?
+                            <CampanhasIcon fill={orange_cp} />
+                            :
+                            <CampanhasIcon fill={grey_cp} />
+                        }
                     </div>
                     <div className="text">CAMPANHAS</div>
                 </div>
