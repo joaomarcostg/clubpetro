@@ -3,12 +3,14 @@
   width: 242px;
   height: 100vh;
   background: #ffffff;
+  position: fixed;
+  border-right: 1px solid #E8ECEF;
 }
 
 .sidebar-container .titulo {
-  padding: 6px 6px;
-  height: 56px;
+  height: 64px;
   width: 100%;
+  padding: 12px 6px 8px 6px;
 }
 
 .sidebar-container .titulo .logo {
@@ -46,6 +48,10 @@
   border-right: none;
   border-top: none;
   border-bottom: none;
+}
+
+.sidebar-container .menuitem:hover svg {
+  fill: #f26522;
 }
 
 .sidebar-container .menuitem .icon {

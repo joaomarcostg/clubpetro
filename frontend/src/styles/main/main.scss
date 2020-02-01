@@ -1,0 +1,14 @@
+$orange_cp: #f26522;
+$black_cp: #252631;
+$white_cp: #f8fafb;
+$grey_cp: #778CA2;
+
+.main-container{
+    position: absolute;
+    overflow: scroll;
+    top: 64px;
+    left: 242px;
+    width: calc(100vw - 242px);
+    height: calc(100vh - 64px);
+    background: $white_cp;
+}

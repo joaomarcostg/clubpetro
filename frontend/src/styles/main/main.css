@@ -1,0 +1,10 @@
+.main-container {
+  position: absolute;
+  overflow: scroll;
+  top: 64px;
+  left: 242px;
+  width: calc(100vw - 242px);
+  height: calc(100vh - 64px);
+  background: #f8fafb;
+}
+/*# sourceMappingURL=main.css.map */

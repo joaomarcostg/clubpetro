@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.antifraude-container {
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+}
+
+.antifraude-container .conteudo {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #778ca2;
+}
+
+.antifraude-container .informacao {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 21px;
+  color: #98a9bc;
+}
+
+.antifraude-container .texto {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #252631;
+}
+
+.antifraude-container .vendas {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.antifraude-container .vendas .vendaitem {
+  background: #fff;
+  width: 33%;
+  height: 100%;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.antifraude-container .vendas .vendaitem .valores {
+  width: 50%;
+  position: relative;
+  margin: 16px;
+}
+
+.antifraude-container .vendas .vendaitem .valores .valor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.antifraude-container .vendas .vendaitem .valores .valor .quantia {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.2px;
+  color: #252631;
+}
+
+.antifraude-container .vendas .vendaitem .valores .valor svg {
+  width: 16px;
+  height: 19px;
+}
+
+.antifraude-container .vendas .vendaitem .grafico {
+  width: 50%;
+  margin: auto 16px auto auto;
+}
+
+.antifraude-container .vendas .vendaitem .grafico img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.antifraude-container .vendas #credito {
+  width: 34%;
+  margin: 0px 30px 0px 30px;
+}
+
+.antifraude-container .analise {
+  margin-top: 20px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.antifraude-container .analise .analise-container {
+  margin-top: 22px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #fff;
+  border-radius: 4px;
+  padding: 0px 8px;
+}
+
+.antifraude-container .analise .analise-container .analiseitem {
+  border-bottom: 1px solid #e8ecef;
+  width: 100%;
+  height: 74px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.antifraude-container .analise .analise-container .analiseitem:last-child {
+  border-bottom: none;
+}
+
+.antifraude-container .analise .analise-container .analiseitem .bandeira {
+  width: 48px;
+  height: 32px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #f8fafb;
+}
+
+.antifraude-container .analise .analise-container .analiseitem .bandeira .logo {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #f8fafb;
+}
+
+.antifraude-container .analise .analise-container .analiseitem .more {
+  cursor: pointer;
+  margin: auto 0px auto 0px;
+  width: 18px;
+  height: 20px;
+}
+
+.antifraude-container .analise .analise-container .analiseitem .more:hover svg {
+  fill: #f26522;
+}
+
+.antifraude-container .fraudulentas {
+  margin-top: 20px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.antifraude-container .fraudulentas .fraudulentas-container {
+  margin-top: 22px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #fff;
+  border-radius: 4px;
+  padding: 0px 8px;
+}
+
+.antifraude-container .fraudulentas .fraudulentas-container .fraudulentasitem {
+  border-bottom: 1px solid #e8ecef;
+  width: 100%;
+  height: 74px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.antifraude-container .fraudulentas .fraudulentas-container .fraudulentasitem:last-child {
+  border-bottom: none;
+}
+
+.antifraude-container .fraudulentas .fraudulentas-container .fraudulentasitem .logofraude {
+  width: 48px;
+  height: 32px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: rgba(255, 43, 43, 0.2);
+}
+
+.antifraude-container .fraudulentas .fraudulentas-container .fraudulentasitem .more {
+  cursor: pointer;
+  margin: auto 0px auto 0px;
+  width: 18px;
+  height: 20px;
+}
+
+.antifraude-container .fraudulentas .fraudulentas-container .fraudulentasitem .more:hover svg {
+  fill: #f26522;
+}
+
+.antifraude-container .fieis {
+  margin-top: 20px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.antifraude-container .fieis .fieis-container {
+  margin-top: 22px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #fff;
+  border-radius: 4px;
+  padding: 0px 8px;
+}
+
+.antifraude-container .fieis .fieis-container .fieisitem {
+  border-bottom: 1px solid #e8ecef;
+  width: 100%;
+  height: 74px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.antifraude-container .fieis .fieis-container .fieisitem:last-child {
+  border-bottom: none;
+}
+
+.antifraude-container .fieis .fieis-container .fieisitem .logofiel {
+  width: 48px;
+  height: 32px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: rgba(109, 210, 48, 0.2);
+}
+
+.antifraude-container .fieis .fieis-container .fieisitem .more {
+  cursor: pointer;
+  margin: auto 0px auto 0px;
+  width: 18px;
+  height: 20px;
+}
+
+.antifraude-container .fieis .fieis-container .fieisitem .more:hover svg {
+  fill: #f26522;
+}
+/*# sourceMappingURL=antifraude.css.map */

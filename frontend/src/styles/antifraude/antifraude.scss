@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+$grey_cp: #778ca2;
+$orange_cp: #f26522;
+$black_cp: #252631;
+$white_cp: #f8fafb;
+$green_cp: #6dd230;
+$red_cp: #ff2b2b;
+
+.antifraude-container {
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+
+  .conteudo {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: $grey_cp;
+  }
+
+  .informacao {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    color: #98a9bc;
+  }
+
+  .texto {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: $black_cp;
+  }
+
+  .vendas {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-content: space-around;
+
+    .vendaitem {
+      background: #fff;
+      width: 33%;
+      height: 100%;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-around;
+
+      .valores {
+        width: 50%;
+        position: relative;
+        margin: 16px;
+        .valor {
+          display: flex;
+          justify-content: left;
+          .quantia {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 0.2px;
+            color: $black_cp;
+          }
+          svg {
+            width: 16px;
+            height: 19px;
+          }
+        }
+      }
+      .grafico {
+        width: 50%;
+        margin: auto 16px auto auto;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    #credito {
+      width: 34%;
+      margin: 0px 30px 0px 30px;
+    }
+  }
+
+  .analise {
+    margin-top: 20px;
+    width: 100%;
+    height: fit-content;
+
+    .analise-container {
+      margin-top: 22px;
+      width: 100%;
+      height: fit-content;
+      background: #fff;
+      border-radius: 4px;
+      padding: 0px 8px;
+
+      .analiseitem {
+        border-bottom: 1px solid #e8ecef;
+        width: 100%;
+        height: 74px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .bandeira {
+          width: 48px;
+          height: 32px;
+          padding: 4px;
+          border-radius: 4px;
+          background-color: $white_cp;
+          .logo {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: contain;
+            background-color: $white_cp;
+          }
+        }
+
+        .more {
+          cursor: pointer;
+          margin: auto 0px auto 0px;
+          width: 18px;
+          height: 20px;
+          &:hover {
+            svg {
+              fill: $orange_cp;
+            }
+          }
+        }
+      }
+    }
+  }
+  .fraudulentas {
+    margin-top: 20px;
+    width: 100%;
+    height: fit-content;
+
+    .fraudulentas-container {
+      margin-top: 22px;
+      width: 100%;
+      height: fit-content;
+      background: #fff;
+      border-radius: 4px;
+      padding: 0px 8px;
+
+      .fraudulentasitem {
+        border-bottom: 1px solid #e8ecef;
+        width: 100%;
+        height: 74px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        &:last-child {
+          border-bottom: none;
+        }
+        .logofraude {
+          width: 48px;
+          height: 32px;
+          padding: 4px;
+          border-radius: 4px;
+          background-color: rgba($color: $red_cp, $alpha: 0.2);
+        }
+        .more {
+          cursor: pointer;
+          margin: auto 0px auto 0px;
+          width: 18px;
+          height: 20px;
+          &:hover {
+            svg {
+              fill: $orange_cp;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fieis {
+    margin-top: 20px;
+    width: 100%;
+    height: fit-content;
+
+    .fieis-container {
+      margin-top: 22px;
+      width: 100%;
+      height: fit-content;
+      background: #fff;
+      border-radius: 4px;
+      padding: 0px 8px;
+
+      .fieisitem {
+        border-bottom: 1px solid #e8ecef;
+        width: 100%;
+        height: 74px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        &:last-child {
+          border-bottom: none;
+        }
+        .logofiel {
+          width: 48px;
+          height: 32px;
+          padding: 4px;
+          border-radius: 4px;
+          background-color: rgba($color: $green_cp, $alpha: 0.2);
+        }
+        .more {
+          cursor: pointer;
+          margin: auto 0px auto 0px;
+          width: 18px;
+          height: 20px;
+          &:hover {
+            svg {
+              fill: $orange_cp;
+            }
+          }
+        }
+      }
+    }
+  }
+}

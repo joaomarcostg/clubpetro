@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.topbar-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: calc(100vw - 242px);
+  height: 64px;
+  position: fixed;
+  left: 242px;
+  border-bottom: 1px solid #E8ECEF;
+}
+
+.topbar-container .items {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar-container .items .conteudo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 32px;
+}
+
+.topbar-container .items .conteudo .botao {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  width: 22px;
+  height: 26px;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+}
+
+.topbar-container .items .conteudo .botao:hover svg {
+  fill: #f26522;
+}
+
+.topbar-container .items .conteudo .texto {
+  text-transform: capitalize;
+  margin: auto 0px auto 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.2px;
+  color: #252631;
+}
+
+.topbar-container .items .icons {
+  margin: auto 60px auto 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topbar-container .items .icons .icon {
+  cursor: pointer;
+  margin: auto 24px auto 0px;
+  width: 22px;
+  height: 26px;
+}
+
+.topbar-container .items .icons .icon:hover svg {
+  fill: #f26522;
+}
+
+.topbar-container .items .icons .perfil {
+  margin: auto 0 auto 24px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topbar-container .items .icons .perfil img {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #778ca2;
+  border-radius: 50%;
+}
+
+.topbar-container .items .icons .perfil p {
+  margin: auto 0px auto 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #252631;
+}
+/*# sourceMappingURL=topbar.css.map */
