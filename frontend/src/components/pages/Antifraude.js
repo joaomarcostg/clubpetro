@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../../styles/antifraude/antifraude.css'
 
 import BottomBar from '../Bottombar.js';
@@ -21,10 +21,6 @@ const grey_cp = "#778ca2"
 const red_cp = "#FF2B2B"
 
 function AntiFraudeComponent() {
-
-    function showOptions(event) {
-        console.log(event)
-    }
 
     return (
         <div className="antifraude-container">
@@ -71,7 +67,7 @@ function AntiFraudeComponent() {
                 <div className="analise-container">
                     <div className="analiseitem">
                         <div className="bandeira">
-                            <img className="logo" src={visalogo}></img>
+                            <img className="logo" src={visalogo} alt="bandeira"></img>
                         </div>
                         <div className="cartao">
                             <p className="texto" id="numerocartao">3190 **** **** 3866</p>
@@ -99,7 +95,7 @@ function AntiFraudeComponent() {
                     </div>
                     <div className="analiseitem">
                         <div className="bandeira">
-                            <img className="logo" src={masterlogo}></img>
+                            <img className="logo" src={masterlogo} alt="bandeira"></img>
                         </div>
                         <div className="cartao">
                             <p className="texto" id="numerocartao">4155 **** **** 7864</p>
@@ -127,7 +123,7 @@ function AntiFraudeComponent() {
                     </div>
                     <div className="analiseitem">
                         <div className="bandeira">
-                            <img className="logo" src={visalogo}></img>
+                            <img className="logo" src={visalogo} alt="bandeira"></img>
                         </div>
                         <div className="cartao">
                             <p className="texto" id="numerocartao">3870 **** **** 8545</p>

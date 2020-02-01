@@ -9,7 +9,6 @@ import profile from '../assets/topbar/profile.png'
 
 
 const grey_cp = "#778AC2"
-const orange_cp = "#f26522"
 
 
 function Topbar(props) {
